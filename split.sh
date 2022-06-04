@@ -1,0 +1,1 @@
+tar --create --verbose --gzip --file=- --exclude=*.sh --exclude=*.tar.* --exclude=.git --remove-files H-1.csv H-1.float H-2.csv H-2.float | split --bytes=100MB - data.tar.gz.
